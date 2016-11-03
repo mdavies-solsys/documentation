@@ -25,7 +25,9 @@ drop.group("v1") { v1 in
 Grouped returns a `GroupBuilder` that you can pass around.
 
 ```swift
-let v1 = drop.grouped("v1")
+import Routing
+
+let v1: RouteGroup = drop.grouped("v1")
 v1.get("users") { request in
     // get the users
 }
